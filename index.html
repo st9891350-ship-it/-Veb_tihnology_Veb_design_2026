@@ -20,19 +20,19 @@
 <legend>  Додаткова інформація </legend>
 <form>
   <label>Стать<span style="color: red;">*</span></label><br>
-<input type="radio"  id="information" name="information" value="Чоловік" >
+<input type="radio"  id="male" name="gender" value="Чоловік" >
 <label for="Чоловік"> Чоловік </label><br>
-<input type="radio"  id="information" name="information" value="Жінка" >
+<input type="radio"  id="female" name="gender" value="Жінка" >
 <label for="Жінка"> Жінка</label><br>
 </form><br>
 
 <form>
   <label>Поточний статус</label><br>
-<input type="checkbox"  id="people" name="people" value="Студент" >
+<input type="checkbox"  id="student" name="status" value="Студент" >
 <label for="Студент"> Студент </label><br>
-<input type="checkbox"  id="people" name="people" value="Працівник" >
+<input type="checkbox"  id="worker" name="status" value="Працівник" >
 <label for="Працівник"> Працівник</label><br>
-<input type="checkbox"  id="people" name="people" value="Безробітній" >
+<input type="checkbox"  id="unemployed" name="status" value="Безробітній" >
 <label for="Безробітній">Безробітній</label><br>
 </form><br>
 
@@ -47,7 +47,7 @@
 <form>
 <label>Навички та технології 
    <span style="color: red;">*</span> </label><br>
- <select name="skiills" size="8" multiple>
+ <select id="skills" name="skiills" size="8" multiple>
 <optgroup label="Tech skills">
    <option value="HTML">HTML</option>
     <option value="CSS">CSS</option>
@@ -64,7 +64,7 @@
 <form>
 <label>Досвід (в роках) </label><br>
 <input type="number" id="experience" name="experience"
- min="0" max="25" step="0.5" value="1" > років</input>
+ min="0" max="25" step="0.5" value="1" > років
  </form><br>
 
  <form >
@@ -74,17 +74,15 @@
 
 <form>
 <label for="comment"> Коментарій</label><br>
-<textarea  name="message" rows="10"></textarea>
+<textarea id="comment"  name="message" rows="10"></textarea>
 </form>
 
 </fieldset><br>
  
-<form action="">
 
 <input type="submit" value="Відправити">
-<input type="submit" value="Скинути ">
+<input type="reset" value="Скинути ">
 
-</form>
 
 
 </body>
